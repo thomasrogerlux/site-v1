@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+# Gatsby
+.cache
+public
+
+# MacOS
+.DS_Store
+
+# Yarn
+yarn-error.log*
+yarn-debug.log*
+yarn-error.log*
