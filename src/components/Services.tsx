@@ -3,6 +3,7 @@ import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Grid, Typography, Container } from "@material-ui/core";
 import clsx from "clsx";
 import { graphql, useStaticQuery } from "gatsby";
+import { useIntl } from "gatsby-plugin-intl";
 
 import { Service } from "./Service";
 
@@ -71,6 +72,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 export const Services: FC = () => {
     const classes = useStyles();
     const data = useStaticQuery(query);
+    const intl = useIntl();
 
     return (
         <Grid className={classes.gridContainer} container>
@@ -79,7 +81,7 @@ export const Services: FC = () => {
                     <Grid className={classes.contentGridContainer} container>
                         <Grid className={classes.titleGridItem} item xs={12}>
                             <Typography className={classes.title} variant="h2">
-                                Services
+                                {intl.formatMessage({ id: "services.title" })}
                             </Typography>
                         </Grid>
                         <Grid className={classes.servicesGridItem} item xs={12}>
@@ -94,8 +96,10 @@ export const Services: FC = () => {
                                     md={4}
                                 >
                                     <Service
-                                        title="Back-end Developer"
-                                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                        title={intl.formatMessage({ id: "services.backend.title" })}
+                                        description={intl.formatMessage({
+                                            id: "services.backend.description",
+                                        })}
                                         blob={data.backendBlob.publicURL}
                                         blobColor="sky"
                                         icon={data.backendIcon.publicURL}
@@ -111,8 +115,10 @@ export const Services: FC = () => {
                                     md={4}
                                 >
                                     <Service
-                                        title="DevOps Engineer"
-                                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                        title={intl.formatMessage({ id: "services.devops.title" })}
+                                        description={intl.formatMessage({
+                                            id: "services.devops.description",
+                                        })}
                                         blob={data.devopsBlob.publicURL}
                                         blobColor="indigo"
                                         icon={data.devopsIcon.publicURL}
@@ -128,8 +134,12 @@ export const Services: FC = () => {
                                     md={4}
                                 >
                                     <Service
-                                        title="Front-end Developer"
-                                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                        title={intl.formatMessage({
+                                            id: "services.frontend.title",
+                                        })}
+                                        description={intl.formatMessage({
+                                            id: "services.frontend.description",
+                                        })}
                                         blob={data.frontendBlob.publicURL}
                                         blobColor="aqua"
                                         icon={data.frontendIcon.publicURL}

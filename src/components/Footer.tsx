@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Grid, Box, Container, Typography, Link } from "@material-ui/core";
 import { graphql, useStaticQuery } from "gatsby";
+import { useIntl } from "gatsby-plugin-intl";
 
 import { FooterLinks } from "./FooterLinks";
 import { Image } from "./Image";
@@ -63,6 +64,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 export const Footer: FC = () => {
     const classes = useStyles();
     const data = useStaticQuery(query);
+    const intl = useIntl();
 
     return (
         <Box className={classes.box}>
@@ -82,17 +84,23 @@ export const Footer: FC = () => {
                     </Grid>
                     <Grid className={classes.textGridItem} item xs={12}>
                         <Typography className={classes.text} variant="body1" align="center">
-                            Website built and designed by me © Thomas Roger Lux
+                            {intl.formatMessage({ id: "footer.copyrights.website" })}
                         </Typography>
                         <Typography className={classes.text} variant="body1" align="center">
-                            Illustrations created by{" "}
+                            {intl.formatMessage({ id: "footer.copyrights.illustrations.created" }) +
+                                " "}
                             <Link
                                 className={classes.link}
                                 href={data.metadata.siteMetadata.contacts.illustration}
                             >
-                                EnPitSu
-                            </Link>{" "}
-                            © Lucas Vilard
+                                {intl.formatMessage({
+                                    id: "footer.copyrights.illustrations.author",
+                                })}
+                            </Link>
+                            {" " +
+                                intl.formatMessage({
+                                    id: "footer.copyrights.illustrations.rights",
+                                })}
                         </Typography>
                     </Grid>
                 </Grid>

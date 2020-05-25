@@ -35,5 +35,14 @@ module.exports = {
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-material-ui`,
         `gatsby-plugin-layout`,
+        {
+            resolve: `gatsby-plugin-intl`,
+            options: {
+                path: `${__dirname}/src/locales`,
+                languages: [`en`, `fr`, `ko`],
+                defaultLanguage: `en`,
+                redirect: true,
+            },
+        },
     ],
 };
