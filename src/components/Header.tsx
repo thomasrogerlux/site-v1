@@ -6,6 +6,7 @@ import { useIntl } from "gatsby-plugin-intl";
 
 import { Image } from "./Image";
 import { LanguageMenu } from "./LanguageMenu";
+import { MobileMenu } from "./MobileMenu";
 
 const query = graphql`
     query {
@@ -89,6 +90,16 @@ export const Header: FC = () => {
                         </Grid>
                         <Grid item>
                             <LanguageMenu />
+                        </Grid>
+                    </Grid>
+                </Hidden>
+                <Hidden smUp>
+                    <Grid className={classes.gridContainer} container spacing={2}>
+                        <Grid item>
+                            <LanguageMenu />
+                        </Grid>
+                        <Grid item>
+                            <MobileMenu />
                         </Grid>
                     </Grid>
                 </Hidden>
