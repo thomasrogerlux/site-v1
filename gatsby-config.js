@@ -23,7 +23,7 @@ module.exports = {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `Thomas Roger Lux`,
-                short_name: `starter`,
+                short_name: `TRL`,
                 start_url: `/`,
                 background_color: `#29B6F6`,
                 theme_color: `#29B6F6`,

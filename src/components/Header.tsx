@@ -76,7 +76,7 @@ export const Header: FC = () => {
                     {intl.formatMessage({ id: "common.brand" })}
                 </Typography>
                 <Box flexGrow={1} />
-                <Hidden xsDown>
+                <Hidden implementation="css" xsDown>
                     <Grid className={classes.gridContainer} container spacing={2}>
                         <Grid item>
                             <Link className={classes.link} href="#">
@@ -93,7 +93,7 @@ export const Header: FC = () => {
                         </Grid>
                     </Grid>
                 </Hidden>
-                <Hidden smUp>
+                <Hidden implementation="css" smUp>
                     <Grid className={classes.gridContainer} container spacing={2}>
                         <Grid item>
                             <LanguageMenu />

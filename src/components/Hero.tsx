@@ -68,7 +68,7 @@ export const Hero: FC = () => {
             <Grid className={classes.contentGridItem} item xs={12}>
                 <Container className={classes.container}>
                     <Grid className={classes.contentGridContainer} container>
-                        <Hidden mdUp>
+                        <Hidden implementation="css" mdUp>
                             <Grid className={classes.imagesGridItemMobile} item xs={12}>
                                 <HeroImages />
                             </Grid>
@@ -76,7 +76,7 @@ export const Hero: FC = () => {
                                 <HeroText />
                             </Grid>
                         </Hidden>
-                        <Hidden smDown>
+                        <Hidden implementation="css" smDown>
                             <Grid className={classes.textGridItemDesktop} item md={7}>
                                 <HeroText />
                             </Grid>

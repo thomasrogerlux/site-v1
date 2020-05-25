@@ -54,7 +54,7 @@ export const About: FC = () => {
             <Grid className={classes.contentGridItem} item xs={12}>
                 <Container>
                     <Grid className={classes.contentGridContainer} container>
-                        <Hidden mdUp>
+                        <Hidden implementation="css" mdUp>
                             <Grid className={classes.textGridItemMobile} item xs={12}>
                                 <AboutText />
                             </Grid>
@@ -62,7 +62,7 @@ export const About: FC = () => {
                                 <AboutImages />
                             </Grid>
                         </Hidden>
-                        <Hidden smDown>
+                        <Hidden implementation="css" smDown>
                             <Grid className={classes.imagesGridItemDesktop} item md={5}>
                                 <AboutImages />
                             </Grid>
