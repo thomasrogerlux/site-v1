@@ -67,24 +67,26 @@ export const Hero: FC = () => {
             <Grid className={classes.headerGridItem} item xs={12} />
             <Grid className={classes.contentGridItem} item xs={12}>
                 <Container className={classes.container}>
-                    <Grid className={classes.contentGridContainer} container>
-                        <Hidden implementation="css" mdUp>
+                    <Hidden implementation="css" mdUp>
+                        <Grid className={classes.contentGridContainer} container>
                             <Grid className={classes.imagesGridItemMobile} item xs={12}>
                                 <HeroImages />
                             </Grid>
                             <Grid className={classes.textGridItemMobile} item xs={12}>
                                 <HeroText />
                             </Grid>
-                        </Hidden>
-                        <Hidden implementation="css" smDown>
+                        </Grid>
+                    </Hidden>
+                    <Hidden implementation="css" smDown>
+                        <Grid className={classes.contentGridContainer} container>
                             <Grid className={classes.textGridItemDesktop} item md={7}>
                                 <HeroText />
                             </Grid>
                             <Grid className={classes.imagesGridItemDesktop} item md={5}>
                                 <HeroImages />
                             </Grid>
-                        </Hidden>
-                    </Grid>
+                        </Grid>
+                    </Hidden>
                 </Container>
             </Grid>
             <Grid className={classes.waveGridItem} item xs={12}>
@@ -92,4 +94,4 @@ export const Hero: FC = () => {
             </Grid>
         </Grid>
     );
-}
+};

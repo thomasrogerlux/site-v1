@@ -14,7 +14,6 @@ const query = graphql`
     }
 `;
 
-
 const useStyles = makeStyles((theme: Theme) => ({
     gridContainer: {
         backgroundColor: theme.palette.background.paper,
@@ -53,24 +52,26 @@ export const About: FC = () => {
         <Grid className={classes.gridContainer} container>
             <Grid className={classes.contentGridItem} item xs={12}>
                 <Container>
-                    <Grid className={classes.contentGridContainer} container>
-                        <Hidden implementation="css" mdUp>
+                    <Hidden implementation="css" mdUp>
+                        <Grid className={classes.contentGridContainer} container>
                             <Grid className={classes.textGridItemMobile} item xs={12}>
                                 <AboutText />
                             </Grid>
                             <Grid className={classes.imagesGridItemMobile} item xs={12}>
                                 <AboutImages />
                             </Grid>
-                        </Hidden>
-                        <Hidden implementation="css" smDown>
+                        </Grid>
+                    </Hidden>
+                    <Hidden implementation="css" smDown>
+                        <Grid className={classes.contentGridContainer} container>
                             <Grid className={classes.imagesGridItemDesktop} item md={5}>
                                 <AboutImages />
                             </Grid>
                             <Grid className={classes.textGridItemDesktop} item md={7}>
                                 <AboutText />
                             </Grid>
-                        </Hidden>
-                    </Grid>
+                        </Grid>
+                    </Hidden>
                 </Container>
             </Grid>
             <Grid className={classes.waveGridItem} item xs={12}>
