@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         marginBottom: theme.spacing(6),
     },
     gridContainer: {
-        [theme.breakpoints.down("xs")]: {
+        [theme.breakpoints.down("sm")]: {
             marginTop: theme.spacing(16),
         },
         marginTop: theme.spacing(12),
