@@ -42,6 +42,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     wave: {
         filter: "drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2))",
     },
+    wavePadFix: {
+        marginTop: "-2px",
+    },
 }));
 
 export const About: FC = () => {
@@ -75,7 +78,9 @@ export const About: FC = () => {
                 </Container>
             </Grid>
             <Grid className={classes.waveGridItem} item xs={12}>
-                <img className={classes.wave} src={data.wave.publicURL} />
+                <div className={classes.wavePadFix}>
+                    <img className={classes.wave} src={data.wave.publicURL} />
+                </div>
             </Grid>
         </Grid>
     );
