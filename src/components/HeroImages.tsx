@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         marginRight: "auto",
         marginTop: "auto",
         marginBottom: "auto",
+        overflow: "inherit !important"
     },
     blob: {
         width: "90%",

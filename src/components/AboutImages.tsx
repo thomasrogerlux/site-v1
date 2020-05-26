@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         marginRight: "auto",
         marginTop: "auto",
         marginBottom: "auto",
+        overflow: "inherit !important"
     },
     blob: {
         filter: `drop-shadow(10px 10px 20px ${(theme as any).palette.indigo.shadow}B3)`,
