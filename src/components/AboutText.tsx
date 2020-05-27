@@ -51,10 +51,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         marginBottom: theme.spacing(6),
     },
     gridContainer: {
-        [theme.breakpoints.down("sm")]: {
-            marginTop: theme.spacing(16),
-        },
-        marginTop: theme.spacing(12),
+        marginTop: theme.spacing(16),
     },
     buttonContainer: {
         marginTop: theme.spacing(4),
@@ -75,12 +72,22 @@ export const AboutText: FC = () => {
                 <Grid className={classes.gridContainer} container spacing={2}>
                     <Grid item xs={12}>
                         <Typography variant="h3">
-                            {intl.formatMessage({ id: "about.studies.title" })}
+                            {intl.formatMessage({ id: "about.experience.title" })}
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant="body1">
-                            {intl.formatMessage({ id: "about.studies.description" })}
+                            {intl.formatMessage({ id: "about.experience.description" })}
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Typography variant="h3">
+                            {intl.formatMessage({ id: "about.education.title" })}
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Typography variant="body1">
+                            {intl.formatMessage({ id: "about.education.description" })}
                         </Typography>
                     </Grid>
                     <Grid className={classes.buttonContainer} item xs={12}>

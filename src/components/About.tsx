@@ -27,11 +27,13 @@ const useStyles = makeStyles((theme: Theme) => ({
             height: "200px",
             minHeight: "200px",
         },
+        alignSelf: "center",
         marginTop: theme.spacing(4),
         height: "300px",
     },
     textGridItemMobile: {},
     imagesGridItemDesktop: {
+        alignSelf: "center",
         height: "500px",
     },
     textGridItemDesktop: {},

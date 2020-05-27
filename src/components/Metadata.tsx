@@ -1,10 +1,13 @@
 import React, { FC } from "react";
 import { Helmet } from "react-helmet";
+import { useIntl } from "gatsby-plugin-intl";
 
 export const Metadata: FC = () => {
+    const intl = useIntl();
+
     return (
         <Helmet>
-            <title>Thomas Roger Lux | Software Engineer</title>
+            <title>{intl.formatMessage({ id: "common.title" })}</title>
             <meta
                 name="viewport"
                 content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
