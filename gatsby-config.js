@@ -6,6 +6,11 @@ module.exports = {
             linkedin: "https://www.linkedin.com/in/thomasrogerlux/",
             email: "thomas@rogerlux.dev",
             illustration: "https://twitter.com/EnPitSu_HotS",
+            resume: {
+                downloadNameEN: "resume-thomasrogerlux.pdf",
+                downloadNameFR: "cv-thomasrogerlux.pdf",
+                downloadNameKO: "resume-thomasrogerlux.pdf",
+            }
         },
     },
     plugins: [

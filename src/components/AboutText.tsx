@@ -2,8 +2,35 @@ import React, { FC } from "react";
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Container, Box, Typography, Grid } from "@material-ui/core";
 import { useIntl } from "gatsby-plugin-intl";
+import { graphql, useStaticQuery } from "gatsby";
 
 import { Button } from "./Button";
+
+const query = graphql`
+    query {
+        metadata: site {
+            siteMetadata {
+                contacts {
+                    email
+                    resume {
+                        downloadNameEN
+                        downloadNameFR
+                        downloadNameKO
+                    }
+                }
+            }
+        }
+        resumeEN: file(relativePath: { eq: "documents/resume-en.pdf" }) {
+            publicURL
+        }
+        resumeFR: file(relativePath: { eq: "documents/resume-fr.pdf" }) {
+            publicURL
+        }
+        resumeKO: file(relativePath: { eq: "documents/resume-ko.pdf" }) {
+            publicURL
+        }
+    }
+`;
 
 const useStyles = makeStyles((theme: Theme) => ({
     container: {
@@ -37,6 +64,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 export const AboutText: FC = () => {
     const classes = useStyles();
     const intl = useIntl();
+    const data = useStaticQuery(query);
 
     return (
         <Container className={classes.container}>
@@ -56,7 +84,16 @@ export const AboutText: FC = () => {
                         </Typography>
                     </Grid>
                     <Grid className={classes.buttonContainer} item xs={12}>
-                        <Button>{intl.formatMessage({ id: "about.cta" })}</Button>
+                        <Button
+                            href={data[`resume${intl.locale.toUpperCase()}`].publicURL}
+                            download={
+                                data.metadata.siteMetadata.contacts.resume[
+                                    `downloadName${intl.locale.toUpperCase()}`
+                                ]
+                            }
+                        >
+                            {intl.formatMessage({ id: "about.cta" })}
+                        </Button>
                     </Grid>
                 </Grid>
             </Box>

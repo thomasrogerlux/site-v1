@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import { graphql, useStaticQuery } from "gatsby";
+import { useIntl } from "gatsby-plugin-intl";
 
 import { FooterLink } from "./FooterLink";
 
@@ -13,8 +14,22 @@ const query = graphql`
                     github
                     linkedin
                     email
+                    resume {
+                        downloadNameEN
+                        downloadNameFR
+                        downloadNameKO
+                    }
                 }
             }
+        }
+        resumeEN: file(relativePath: { eq: "documents/resume-en.pdf" }) {
+            publicURL
+        }
+        resumeFR: file(relativePath: { eq: "documents/resume-fr.pdf" }) {
+            publicURL
+        }
+        resumeKO: file(relativePath: { eq: "documents/resume-ko.pdf" }) {
+            publicURL
         }
         githubIcon: file(relativePath: { eq: "images/icons/github.svg" }) {
             publicURL
@@ -41,6 +56,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 export const FooterLinks: FC = () => {
     const classes = useStyles();
+    const intl = useIntl();
     const data = useStaticQuery(query);
 
     return (
@@ -64,7 +80,15 @@ export const FooterLinks: FC = () => {
                 />
             </Grid>
             <Grid className={classes.gridItem} item>
-                <FooterLink icon={data.resumeIcon.publicURL} url="" />
+                <FooterLink
+                    icon={data.resumeIcon.publicURL}
+                    url={data[`resume${intl.locale.toUpperCase()}`].publicURL}
+                    download={
+                        data.metadata.siteMetadata.contacts.resume[
+                            `downloadName${intl.locale.toUpperCase()}`
+                        ]
+                    }
+                />
             </Grid>
         </Grid>
     );

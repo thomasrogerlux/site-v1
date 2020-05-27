@@ -2,6 +2,11 @@ import React, { FC } from "react";
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Button as BaseButton } from "@material-ui/core";
 
+interface ButtonProps {
+    href?: string;
+    download?: string;
+}
+
 const useStyles = makeStyles((theme: Theme) => ({
     button: {
         color: theme.palette.common.white,
@@ -18,12 +23,18 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 }));
 
-export const Button: FC = ({ children }) => {
+export const Button: FC<ButtonProps> = ({ children, href, download }) => {
     const classes = useStyles();
 
     return (
-        <BaseButton className={classes.button} color="secondary" variant="contained">
+        <BaseButton
+            href={href}
+            download={download}
+            className={classes.button}
+            color="secondary"
+            variant="contained"
+        >
             {children}
         </BaseButton>
     );
-}
+};

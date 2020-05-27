@@ -2,8 +2,21 @@ import React, { FC } from "react";
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Container, Typography, Grid } from "@material-ui/core";
 import { useIntl } from "gatsby-plugin-intl";
+import { graphql, useStaticQuery } from "gatsby";
 
 import { Button } from "./Button";
+
+const query = graphql`
+    query {
+        metadata: site {
+            siteMetadata {
+                contacts {
+                    email
+                }
+            }
+        }
+    }
+`;
 
 const useStyles = makeStyles((theme: Theme) => ({
     buttonGridItem: {
@@ -17,6 +30,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 export const HeroText: FC = () => {
     const classes = useStyles();
     const intl = useIntl();
+    const data = useStaticQuery(query);
 
     return (
         <Container>
@@ -43,7 +57,9 @@ export const HeroText: FC = () => {
                     </Typography>
                 </Grid>
                 <Grid className={classes.buttonGridItem} item>
-                    <Button>{intl.formatMessage({ id: "hero.cta" })}</Button>
+                    <Button href={`mailto:${data.metadata.siteMetadata.contacts.email}`}>
+                        {intl.formatMessage({ id: "hero.cta" })}
+                    </Button>
                 </Grid>
             </Grid>
         </Container>

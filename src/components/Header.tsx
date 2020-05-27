@@ -10,6 +10,27 @@ import { MobileMenu } from "./MobileMenu";
 
 const query = graphql`
     query {
+        metadata: site {
+            siteMetadata {
+                contacts {
+                    email
+                    resume {
+                        downloadNameEN
+                        downloadNameFR
+                        downloadNameKO
+                    }
+                }
+            }
+        }
+        resumeEN: file(relativePath: { eq: "documents/resume-en.pdf" }) {
+            publicURL
+        }
+        resumeFR: file(relativePath: { eq: "documents/resume-fr.pdf" }) {
+            publicURL
+        }
+        resumeKO: file(relativePath: { eq: "documents/resume-ko.pdf" }) {
+            publicURL
+        }
         logo: file(relativePath: { eq: "images/logos/trl.png" }) {
             childImageSharp {
                 fluid {
@@ -79,12 +100,23 @@ export const Header: FC = () => {
                 <Hidden implementation="css" xsDown>
                     <Grid className={classes.gridContainer} container spacing={2}>
                         <Grid item>
-                            <Link className={classes.link} href="#">
+                            <Link
+                                className={classes.link}
+                                href={`mailto:${data.metadata.siteMetadata.contacts.email}`}
+                            >
                                 {intl.formatMessage({ id: "header.actions.contact" })}
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link className={classes.link} href="#">
+                            <Link
+                                className={classes.link}
+                                href={data[`resume${intl.locale.toUpperCase()}`].publicURL}
+                                download={
+                                    data.metadata.siteMetadata.contacts.resume[
+                                        `downloadName${intl.locale.toUpperCase()}`
+                                    ]
+                                }
+                            >
                                 {intl.formatMessage({ id: "header.actions.resume" })}
                             </Link>
                         </Grid>

@@ -5,6 +5,7 @@ import { IconButton } from "@material-ui/core";
 interface FooterLinkProps {
     icon: string;
     url: string;
+    download?: string;
 }
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -14,16 +15,16 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     image: {
         width: "24px",
-        height: "24px"
+        height: "24px",
     },
 }));
 
-export const FooterLink: FC<FooterLinkProps> = ({ url, icon }) => {
+export const FooterLink: FC<FooterLinkProps> = ({ url, icon, download }) => {
     const classes = useStyles();
 
     return (
-        <IconButton className={classes.button} href={url}>
+        <IconButton className={classes.button} href={url} download={download}>
             <img className={classes.image} src={icon} />
         </IconButton>
     );
-}
+};
