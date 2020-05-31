@@ -80,14 +80,14 @@ export const LanguageMenu: FC = () => {
                         </Typography>
                     </Box>
                 </MenuItem>
-                <MenuItem onClick={() => handleSubmit("ko")}>
+                {/* <MenuItem onClick={() => handleSubmit("ko")}>
                     <Box className={classes.itemBox}>
                         <img className={classes.image} src={data.ko.publicURL} />
                         <Typography className={classes.itemText} variant="body1">
                             {intl.formatMessage({ id: "header.lang.korean" })}
                         </Typography>
                     </Box>
-                </MenuItem>
+                </MenuItem> */}
             </Menu>
         </Box>
     );
