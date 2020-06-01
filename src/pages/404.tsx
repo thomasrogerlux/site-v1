@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     blob: {
         position: "absolute",
+        width: "100%",
     },
 }));
 
