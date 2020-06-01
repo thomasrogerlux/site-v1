@@ -1,35 +1,67 @@
 {
-    "common.brand": "Thomas Roger Lux",
-    "common.title": "Thomas Roger Lux | Developer",
-    "header.actions.contact": "Contact",
-    "header.actions.resume": "Resume",
-    "header.lang.english": "English",
-    "header.lang.french": "Français",
-    "header.lang.korean": "한국어",
-    "hero.uptitle": "Hi! My name is",
-    "hero.title": "Thomas Roger Lux.",
-    "hero.title2": "I build stuff for the web.",
-    "hero.subtitle": "I'm a developer based in Paris, France.",
-    "hero.subtitle2": "I can build your project from the first line of code to the production.",
-    "hero.cta": "Contact Me",
-    "services.title": "Services",
-    "services.backend.title": "Back-end Developer",
-    "services.backend.description": "I worked professionally as a back-end developer back when I was at Indigen Solutions. For example, I was the main developer on a micro-services based project, using NodeJS and NestJS, backed by MySQL database and running data processing algorithms.",
-    "services.devops.title": "DevOps Engineer",
-    "services.devops.description": "I’m really passionate about the DevOps world, and could spend hours talking about it. I know how to automate your AWS infrastructure using Terraform, provision your servers using Ansible, deploy your Docker containers to Kubernetes and setup your Gitlab continuous integration. But for me DevOps is more than a set a skills, it’s also a mindset when developing projects.",
-    "services.frontend.title": "Front-end Developer",
-    "services.frontend.description": "Even if front-end related work was never my main focus, I still learned a lot more than what you would expect. I have a deep knowledge of the web front-end frameworks ReactJS and Angular2+ and also spend some time working with the mobile front-end frameworks React Native and Flutter.",
-    "about.title": "About Me",
-    "about.experience.title": "Experience",
-    "about.experience.description": "I worked at the digital web agency Indigen Solutions in Nice, France (2017 - 2019) for nearly one year and a half during multiple internships as a full-stack web developer (back-end mainly, but also a lot of front-end web/mobile and some DevOps). Now I’m working on my graduation project (2018 - 2020), Citynette, where I’m in charge of all DevOps related tasks (continuous integration, deployments and infrastructure) as well as the web development related tasks (website and back-office).",
-    "about.education.title": "Education",
-    "about.education.description": "I currently study at Epitech School in Paris, France (2016 - 2021) to graduate a master level in Information and Communication Technologies. I also studied one year at Inha University in Incheon, South Korea (2019 - 2020) where I was in Computer Engineering major. However I think that as a developer it’s important to be able to study by myself, that’s why I also participated to multiple hackathons, keynotes, workshops and online courses.",
-    "about.cta": "Download Resume",
-    "footer.copyrights.website": "Website built and designed by me © Thomas Roger Lux",
-    "footer.copyrights.illustrations.created": "Illustrations created by",
-    "footer.copyrights.illustrations.author": "EnPitSu",
-    "footer.copyrights.illustrations.rights": "© Lucas Vilard",
-    "notfound.title": "OOPS",
-    "notfound.description": "The page you are looking for doesn't exist",
-    "notfound.link": "Go back to home page"
+    "common": {
+        "brand": "Thomas Roger Lux",
+        "title": "Thomas Roger Lux | Developer"
+    },
+    "header": {
+        "actions": {
+            "contact": "Contact",
+            "resume": "Resume"
+        },
+        "lang": {
+            "english": "English",
+            "french": "Français",
+            "korean": "한국어"
+        }
+    },
+    "hero": {
+        "uptitle": "Hi! My name is",
+        "title": "Thomas Roger Lux.",
+        "title2": "I build stuff for the web.",
+        "subtitle": "I'm a developer based in Paris, France.",
+        "subtitle2": "I can build your project from the first line of code to the production.",
+        "cta": "Contact Me"
+    },
+    "services": {
+        "title": "Services",
+        "backend": {
+            "title": "Back-end Developer",
+            "description": "I worked professionally as a back-end developer back when I was at Indigen Solutions. For example, I was the main developer on a micro-services based project, using NodeJS and NestJS, backed by MySQL database and running data processing algorithms."
+        },
+        "devops": {
+            "title": "DevOps Engineer",
+            "description": "I’m really passionate about the DevOps world, and could spend hours talking about it. I know how to automate your AWS infrastructure using Terraform, provision your servers using Ansible, deploy your Docker containers to Kubernetes and setup your Gitlab continuous integration. But for me DevOps is more than a set a skills, it’s also a mindset when developing projects."
+        },
+        "frontend": {
+            "title": "Front-end Developer",
+            "description": "Even if front-end related work was never my main focus, I still learned a lot more than what you would expect. I have a deep knowledge of the web front-end frameworks ReactJS and Angular2+ and also spend some time working with the mobile front-end frameworks React Native and Flutter."
+        }
+    },
+    "about": {
+        "title": "About Me",
+        "experience": {
+            "title": "Experience",
+            "description": "I worked at the digital web agency Indigen Solutions in Nice, France (2017 - 2019) for nearly one year and a half during multiple internships as a full-stack web developer (back-end mainly, but also a lot of front-end web/mobile and some DevOps). Now I’m working on my graduation project (2018 - 2020), Citynette, where I’m in charge of all DevOps related tasks (continuous integration, deployments and infrastructure) as well as the web development related tasks (website and back-office)."
+        },
+        "education": {
+            "title": "Education",
+            "description": "I currently study at Epitech School in Paris, France (2016 - 2021) to graduate a master level in Information and Communication Technologies. I also studied one year at Inha University in Incheon, South Korea (2019 - 2020) where I was in Computer Engineering major. However I think that as a developer it’s important to be able to study by myself, that’s why I also participated to multiple hackathons, keynotes, workshops and online courses."
+        },
+        "cta": "Download Resume"
+    },
+    "footer": {
+        "copyrights": {
+            "website": "Website built and designed by me © Thomas Roger Lux",
+            "illustrations": {
+                "created": "Illustrations created by",
+                "author": "EnPitSu",
+                "rights": "© Lucas Vilard"
+            }
+        }
+    },
+    "notfound": {
+        "title": "OOPS",
+        "description": "The page you are looking for doesn't exist",
+        "link": "Go back to home page"
+    }
 }
