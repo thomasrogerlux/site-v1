@@ -28,5 +28,8 @@
     "footer.copyrights.website": "Website built and designed by me © Thomas Roger Lux",
     "footer.copyrights.illustrations.created": "Illustrations created by",
     "footer.copyrights.illustrations.author": "EnPitSu",
-    "footer.copyrights.illustrations.rights": "© Lucas Vilard"
+    "footer.copyrights.illustrations.rights": "© Lucas Vilard",
+    "notfound.title": "OOPS",
+    "notfound.description": "The page you are looking for doesn't exist",
+    "notfound.link": "Go back to home page"
 }

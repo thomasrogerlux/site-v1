@@ -28,5 +28,8 @@
     "footer.copyrights.website": "Site web conçu par mes soins © Thomas Roger Lux",
     "footer.copyrights.illustrations.created": "Illustrations faites par",
     "footer.copyrights.illustrations.author": "EnPitSu",
-    "footer.copyrights.illustrations.rights": "© Lucas Vilard"
+    "footer.copyrights.illustrations.rights": "© Lucas Vilard",
+    "notfound.title": "OUPS",
+    "notfound.description": "La page que vous cherchez n'existe pas",
+    "notfound.link": "Retour à l'accueil"
 }
