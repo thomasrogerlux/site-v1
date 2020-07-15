@@ -91,7 +91,7 @@ export const Footer: FC = () => {
                                 " "}
                             <Link
                                 className={classes.link}
-                                href={data.metadata.siteMetadata.contacts.illustration}
+                                href={`mailto:${data.metadata.siteMetadata.contacts.illustration}`}
                             >
                                 {intl.formatMessage({
                                     id: "footer.copyrights.illustrations.author",

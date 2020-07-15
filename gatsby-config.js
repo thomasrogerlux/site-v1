@@ -5,7 +5,7 @@ module.exports = {
             github: "https://github.com/thomasrogerlux",
             linkedin: "https://www.linkedin.com/in/thomasrogerlux/",
             email: "thomas@rogerlux.dev",
-            illustration: "https://twitter.com/EnPitSu_HotS",
+            illustration: "lvilard@hotmail.com",
             resume: {
                 downloadNameEN: "resume-thomasrogerlux.pdf",
                 downloadNameFR: "cv-thomasrogerlux.pdf",
