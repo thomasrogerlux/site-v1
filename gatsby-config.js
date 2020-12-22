@@ -8,8 +8,7 @@ module.exports = {
             illustration: "lvilard@hotmail.com",
             resume: {
                 downloadNameEN: "resume-thomasrogerlux.pdf",
-                downloadNameFR: "cv-thomasrogerlux.pdf",
-                downloadNameKO: "resume-thomasrogerlux.pdf",
+                downloadNameFR: "cv-thomasrogerlux.pdf"
             }
         },
     },
@@ -44,7 +43,7 @@ module.exports = {
             resolve: `gatsby-plugin-intl`,
             options: {
                 path: `${__dirname}/src/locales`,
-                languages: [`en`, `fr`], // [`en`, `fr`, `ko`],
+                languages: [`en`, `fr`],
                 defaultLanguage: `en`,
                 redirect: true,
             },

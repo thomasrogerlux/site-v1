@@ -12,9 +12,6 @@ const query = graphql`
         fr: file(relativePath: { eq: "images/flags/fr.svg" }) {
             publicURL
         }
-        ko: file(relativePath: { eq: "images/flags/kr.svg" }) {
-            publicURL
-        }
     }
 `;
 
@@ -80,14 +77,6 @@ export const LanguageMenu: FC = () => {
                         </Typography>
                     </Box>
                 </MenuItem>
-                {/* <MenuItem onClick={() => handleSubmit("ko")}>
-                    <Box className={classes.itemBox}>
-                        <img className={classes.image} src={data.ko.publicURL} />
-                        <Typography className={classes.itemText} variant="body1">
-                            {intl.formatMessage({ id: "header.lang.korean" })}
-                        </Typography>
-                    </Box>
-                </MenuItem> */}
             </Menu>
         </Box>
     );

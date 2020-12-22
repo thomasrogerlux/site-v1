@@ -15,7 +15,6 @@ const query = graphql`
                     resume {
                         downloadNameEN
                         downloadNameFR
-                        downloadNameKO
                     }
                 }
             }
@@ -24,9 +23,6 @@ const query = graphql`
             publicURL
         }
         resumeFR: file(relativePath: { eq: "documents/resume-fr.pdf" }) {
-            publicURL
-        }
-        resumeKO: file(relativePath: { eq: "documents/resume-ko.pdf" }) {
             publicURL
         }
     }

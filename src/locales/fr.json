@@ -10,14 +10,13 @@
         },
         "lang": {
             "english": "English",
-            "french": "Français",
-            "korean": "한국어"
+            "french": "Français"
         }
     },
     "hero": {
         "uptitle": "Salut! Je m'appelle",
         "title": "Thomas Roger Lux.",
-        "title2": "Je travail avec le web.",
+        "title2": "Je travaille avec le web.",
         "subtitle": "Je suis un développeur basé à Paris.",
         "subtitle2": "Je peux vous aider avec votre projet de la première ligne de code jusqu'à la production.",
         "cta": "Me Contacter"
