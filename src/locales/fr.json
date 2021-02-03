@@ -14,9 +14,9 @@
         }
     },
     "hero": {
-        "uptitle": "Salut! Je m'appelle",
+        "uptitle": "Salut ! Je m'appelle",
         "title": "Thomas Roger Lux.",
-        "title2": "Je travaille avec le web.",
+        "title2": "Le web, c'est mon truc.",
         "subtitle": "Je suis un développeur basé à Paris.",
         "subtitle2": "Je peux vous aider avec votre projet de la première ligne de code jusqu'à la production.",
         "cta": "Me Contacter"
@@ -25,26 +25,40 @@
         "title": "Services",
         "backend": {
             "title": "Développeur Back-end",
-            "description": "J’ai travaillé professionnellement en tant que développeur back-end quand j’étais à Indigen Solutions. Par exemple, j’étais développeur principal sur un projet basé sur des micro-services NodeJS et NestJS, le tout supporté par une base de donnée MySQL, pour faire tourner des algorithmes de traitement de donnée."
+            "description": "J'ai développé des micro-services NodeJS, des APIs GraphQL avec Golang et contribué sur des backends Python/Django. Je suis à mon aise avec des base de données SQL, même des exotiques comme CockroachDB. Si vous préférez un système de documents, comme Mongo, pas de problème."
         },
         "devops": {
             "title": "Ingénieur DevOps",
-            "description": "Je suis vraiment passionné par le monde du DevOps, et pourrait passer des heures à en parler. Je sais comment automatiser votre infrastructure AWS avec Terraform, configurer vos serveurs avec Ansible, déployer vos conteneurs Docker sur Kubernetes et mettre en place votre intégration continue Gitlab. Mais pour moi, le DevOps est plus qu’un ensemble de compétences, c’est aussi un état d’esprit lors du développement d’un projet."
+            "description": "Mettre en place un environnement d'Infrastructure as Code avec Terraform et Ansible pour déployer vos containers Docker ? Pas de problème. Si ce dont vous avez besoin est une CI plus classique, GitlabCI, Github Actions ou encore CircleCI feront l'affaire."
         },
         "frontend": {
             "title": "Développeur Front-end",
-            "description": "Même si le travail lié au front-end n’a jamais été mon focus principal, j’ai quand même acquis une base de compétence solide. J’ai une profonde compréhension des frameworks web ReactJS et Angular2+, mais j’ai aussi passé du temps sur des frameworks mobile comme React Native et Flutter."
+            "description": "Je connais l'API de React par coeur et j'ai passé un moment sur des projets Angular (v2+). Je connais bien plus que les basiques du CSS et de l'HTML et code mes fronts en Typescript. J'ai aussi contribué sur des projets d'application mobile hybride basé sur React Native et Flutter."
         }
     },
     "about": {
         "title": "À Propos De Moi",
         "experience": {
             "title": "Expérience",
-            "description": "J’ai travaillé à l’agence digitale Indigen Solutions à Nice (2017 - 2019) pour près d’un an et demi lors de plusieurs stages en tant que développeur full-stack web (principalement back-end, mais aussi beaucoup de front-end web et mobile, plus un peu de DevOps). Maintenant je travails sur mon projet de fin d’étude (2018 - 2020), Citynette, où je suis en charges de toutes les tâches liées au DevOps (intégrations continues, déploiement, infrastructure) mais aussi de celles liées au développement web (site web et console d’administration)."
+            "qantev": {
+                "title": "QantEv",
+                "description": "Après mon retour en France en 2020, j'ai rejoint l'équipe de QantEv, une start-up basée à Station F. J'y ai eu l'opportunité de développer mes compétences en backends Python, d'affiner mes connaissances de React et d'expérimenter avec mes premières tâches DevOps du monde professionnel. J'ai également trouvé un peu de temps pour faire un petit peu de gestion de projet et m'essayer au design d'interfaces et d'expériences utilisateurs."
+            },
+            "indigen": {
+                "title": "Indigen Solutions",
+                "description": "J'ai commencé ma carrière à Indigen Solutions en 2017, et y suit resté jusqu'à mi-2019, grâce à plusieurs stages et un job à temps partiel. Ce fût ma première expérience professionnelle, où j'ai pu découvrir le monde du Javascript et Typescript full stack, avec des backends NodeJS, des fronts ReactJS et des applications mobiles React Native."
+            }
         },
         "education": {
             "title": "Études",
-            "description": "Actuellement je suis étudiant à l’école Epitech, à Paris (2016 - 2021), pour obtenir un master dans les technologies de l’information. J’ai également étudié pendant un an à l’université de Inha à Incheon en Corée du sud (2019 - 2020) où j’étudiais l’ingénierie informatique. Cependant, je penses qu’un développeur doit être également capable d’apprendre par lui-même, et c’est pourquoi j’ai également participé à de multiples hackathons, conférences, ateliers et cours en ligne."
+            "inha": {
+                "title": "Université d'Inha",
+                "description": "J'ai passé un an à suivre les cours du major d'ingénierie informatique à l'université d'Inha (Corée du Sud) et ait surtout étudié la sécurité et les réseaux informatiques. J'ai aussi appris à parler Anglais en tant que langage du quotidien et ait trouvé un peu de temps pour suivre des cours d'entrepreneuriat et de marketing, pour le fun."
+            },
+            "epitech": {
+                "title": "Epitech",
+                "description": "J'ai commencé mon master en technologies de l'information à Epitech (France) en 2016. Avec un cursus centré autour de la pratique et d'un système de projet, j'ai pu apprendre le fonctionnement interne de Linux, le C, le C++ et eu l'opportunité de postuler pour de très nombreux stages."
+            }
         },
         "cta": "Télécharger Mon CV"
     },
@@ -55,7 +69,7 @@
         "copyrights.illustrations.rights": "© Lucas Vilard"
     },
     "notfound": {
-        "title": "OUPS",
+        "title": "OUPS !",
         "description": "La page que vous cherchez n'existe pas",
         "link": "Retour à l'accueil"
     }

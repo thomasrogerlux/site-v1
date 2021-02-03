@@ -71,20 +71,58 @@ export const AboutText: FC = () => {
                             {intl.formatMessage({ id: "about.experience.title" })}
                         </Typography>
                     </Grid>
-                    <Grid item xs={12}>
-                        <Typography variant="body1">
-                            {intl.formatMessage({ id: "about.experience.description" })}
-                        </Typography>
+                    <Grid item container xs={12}>
+                        <Grid item>
+                            <Typography variant="h4">
+                                {intl.formatMessage({ id: "about.experience.qantev.title" })}
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="body1">
+                                {intl.formatMessage({ id: "about.experience.qantev.description" })}
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid item container xs={12}>
+                        <Grid item>
+                            <Typography variant="h4">
+                                {intl.formatMessage({ id: "about.experience.indigen.title" })}
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="body1">
+                                {intl.formatMessage({ id: "about.experience.indigen.description" })}
+                            </Typography>
+                        </Grid>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant="h3">
                             {intl.formatMessage({ id: "about.education.title" })}
                         </Typography>
                     </Grid>
-                    <Grid item xs={12}>
-                        <Typography variant="body1">
-                            {intl.formatMessage({ id: "about.education.description" })}
-                        </Typography>
+                    <Grid item container xs={12}>
+                        <Grid item>
+                            <Typography variant="h4">
+                                {intl.formatMessage({ id: "about.education.inha.title" })}
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="body1">
+                                {intl.formatMessage({ id: "about.education.inha.description" })}
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid item container xs={12}>
+                        <Grid item>
+                            <Typography variant="h4">
+                                {intl.formatMessage({ id: "about.education.epitech.title" })}
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="body1">
+                                {intl.formatMessage({ id: "about.education.epitech.description" })}
+                            </Typography>
+                        </Grid>
                     </Grid>
                     <Grid className={classes.buttonContainer} item xs={12}>
                         <Button

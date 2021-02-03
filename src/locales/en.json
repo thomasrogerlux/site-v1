@@ -25,26 +25,40 @@
         "title": "Services",
         "backend": {
             "title": "Back-end Developer",
-            "description": "I worked professionally as a back-end developer back when I was at Indigen Solutions. For example, I was the main developer on a micro-services based project, using NodeJS and NestJS, backed by MySQL database and running data processing algorithms."
+            "description": "I worked on NodeJS micro-services, Golang GraphQL APIs and Django based Python backends. Don't have any problem with SQL based databases, even exotic ones such as CockroachDB. If you prefer document based ones, like Mongo, that's good too."
         },
         "devops": {
             "title": "DevOps Engineer",
-            "description": "I’m really passionate about the DevOps world, and could spend hours talking about it. I know how to automate your AWS infrastructure using Terraform, provision your servers using Ansible, deploy your Docker containers to Kubernetes and setup your Gitlab continuous integration. But for me DevOps is more than a set a skills, it’s also a mindset when developing projects."
+            "description": "Setting up an Infrastructure as Code environment with Terraform and Ansible to deploy your Docker based containers? No problem. If what you need is a more classic CI, I'm capable with GitlabCI, Github Actions or even CircleCI."
         },
         "frontend": {
             "title": "Front-end Developer",
-            "description": "Even if front-end related work was never my main focus, I still learned a lot more than what you would expect. I have a deep knowledge of the web front-end frameworks ReactJS and Angular2+ and also spend some time working with the mobile front-end frameworks React Native and Flutter."
+            "description": "I know by heart React's API, had my fair share of time with Angular (v2+) and know much more than the basics of CSS/HTML. I code my fronts in Typescript and worked on mobile hybrid projects based on React Native and Flutter."
         }
     },
     "about": {
         "title": "About Me",
         "experience": {
             "title": "Experience",
-            "description": "I worked at the digital web agency Indigen Solutions in Nice, France (2017 - 2019) for nearly one year and a half during multiple internships as a full-stack web developer (back-end mainly, but also a lot of front-end web/mobile and some DevOps). Now I’m working on my graduation project (2018 - 2020), Citynette, where I’m in charge of all DevOps related tasks (continuous integration, deployments and infrastructure) as well as the web development related tasks (website and back-office)."
+            "qantev": {
+                "title": "QantEv",
+                "description": "After my return to France in 2020, I started working at QantEv, a Station F's based startup. There, I got the opportunity to develop my skills with Python based backends, refine my knowledge of React, and experience my first professional DevOps jobs. Somehow I also found the time to try myself at some light project management and UX/UI design."
+            },
+            "indigen": {
+                "title": "Indigen Solutions",
+                "description": "I worked at Indigen Solutions starting 2017 until mid-2019 thanks to a couple of internships and a part-time job. This was my first work experience, where I got the opportunity to explore the world of full stack Javascript/Typescript, with NodeJS backends, ReactJS frontends, and React Native mobile apps."
+            }
         },
         "education": {
             "title": "Education",
-            "description": "I currently study at Epitech School in Paris, France (2016 - 2021) to graduate a master level in Information and Communication Technologies. I also studied one year at Inha University in Incheon, South Korea (2019 - 2020) where I was in Computer Engineering major. However I think that as a developer it’s important to be able to study by myself, that’s why I also participated to multiple hackathons, keynotes, workshops and online courses."
+            "inha": {
+                "title": "Inha University",
+                "description": "Spent one year following classes of the computer engineering major at Inha University (South Korea) and studied mostly computer security and networks. Also got used to speak English as my main language and found some time to follow business and marketing classes, for fun."
+            },
+            "epitech": {
+                "title": "Epitech",
+                "description": "I started my master in computer science at the Epitech School (France) in 2016. With a cursus centered around projects and practice, I studied Linux internals as well as C and C++ and got the opportunity to apply for tons of internships."
+            }
         },
         "cta": "Download Resume"
     },
@@ -59,7 +73,7 @@
         }
     },
     "notfound": {
-        "title": "OOPS",
+        "title": "OOPS!",
         "description": "The page you are looking for doesn't exist",
         "link": "Go back to home page"
     }
